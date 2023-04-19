@@ -1,0 +1,8 @@
+.aplication--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.aplication--content {
+  min-height: calc(100vh - 130px);
+}

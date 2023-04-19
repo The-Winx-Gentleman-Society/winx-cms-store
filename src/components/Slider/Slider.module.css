@@ -1,0 +1,80 @@
+.shelf-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.shelf {
+  display: flex;
+}
+
+.card,
+.card--skip,
+.card--visible {
+  border: 1px solid #000;
+  transition: linear 0.2s;
+  width: 100%;
+  display: flex;
+}
+
+.card--visible {
+  position: relative;
+  left: 0;
+}
+
+.card {
+  position: absolute;
+  left: 100%;
+}
+
+.card--skip {
+  position: absolute;
+  left: -100%;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  transform: translateY(-50%);
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.arrow-left {
+  left: 40px;
+  top: 50%;
+}
+
+.arrow-right {
+  right: 40px;
+  top: 50%;
+}
+
+.dots-container {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot,
+.dot--active {
+  border-radius: 50%;
+  background: gray;
+  cursor: pointer;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+}
+
+.dot--active {
+  width: 12px;
+  height: 12px;
+}
